@@ -1,0 +1,65 @@
+conda env remove -n ENV_NAME
+
+
+export FLASK_APP=main
+FLASK_ENV=development
+flask run
+
+3.1.0a0
+  
+
+
+
+
+
+
+links 
+
+Language identification in python using fastText
+https://medium.com/@c.chaitanya/language-identification-in-python-using-fasttext-60359dc30ed0
+
+
+
+Создание чат-бота с использованием обработки естественного языка в Python
+https://www.section.io/engineering-education/creating-chatbot-using-natural-language-processing-in-python/
+
+
+
+Build your own AI-powered content generator with 7 lines of Python code
+https://medium.com/mlearning-ai/build-your-own-ai-powered-content-generator-with-7-lines-of-python-code-a679e7d5a563
+
+
+
+Text Generation with Transformers in Python
+https://www.thepythoncode.com/article/text-generation-with-transformers-in-python
+
+Conversational AI Chatbot with Transformers in Python
+https://www.thepythoncode.com/article/conversational-ai-chatbot-with-huggingface-transformers-in-python
+
+
+
+
+Question And Answering With Bert
+
+https://www.youtube.com/watch?v=scJsty_DR3o&t=311s
+
+https://towardsdatascience.com/question-and-answering-with-bert-6ef89a78dac
+
+
+https://www.youtube.com/watch?v=ekqsdIn0qmQ
+
+
+
+create model
+https://devpress.csdn.net/python/62f53f2ac6770329307fbc3e.html
+
+
+
+https://colab.research.google.com/github/neuml/txtai/blob/master/examples/19_Train_a_QA_model.ipynb#scrollTo=zZtHxNSwFNGC
+
+https://www.deepset.ai/blog/why-trained-qa-model-needs-data
+
+
+
+
+

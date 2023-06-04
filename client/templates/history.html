@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="vueapp" class="chat-block">
+
+
+    <div class="head-chat">
+
+      <div class="head-block">
+        <a href="./index.html">back</a>
+        <button class="save" @click="getHistory">history</button>
+        <div class="name-avatar">
+          <img src="../img/images.png" class="avatar-bot">
+          <p class="bot-name">chat AI</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="mesage-block">
+
+      <ul class="message-list">
+
+        <li v-for="message in history[0]" class="message-item">
+          <div class="right-mgs">
+
+            <div class="right-corpus">
+              <p class="message-text">{{message.question}}</p>
+              <p class="time">{{message.time}}</p>
+            </div>
+
+          </div>
+          <div class="left-mgs">
+
+            <div class="left-corpus">
+              <p class="message-text">{{message.answer}}</p>
+              <p class="time">{{message.time}}</p>
+             
+            </div>
+
+          </div>
+      </ul>
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="../src/history.js"></script>
+</body>
+
+</html>

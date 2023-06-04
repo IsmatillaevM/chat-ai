@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>chat AI</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+
+  <div id="vueapp" class="chat-block">
+
+
+    <div class="head-chat">
+
+      <div class="head-block">
+        <div class="head-left">
+          <a href="./history.html"><button class="save">history</button></a>
+          <button class="save" @click="saveChatDb">save db</button>
+        </div>
+
+        <div class="name-avatar">
+          <img src="../img/images.png" class="avatar-bot">
+          <p class="bot-name">chat AI</p>
+        </div>
+        <div>
+          <label for="type">type</label>
+          <select class="select-model" v-model="typeanswer" name="typeanswer">
+
+            <option value="local">local</option>
+            <option value="internet">internet</option>
+
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mesage-block">
+
+      <ul class="message-list">
+
+        <li v-for="message in chatlist" class="message-item">
+          <div class="right-mgs">
+
+            <div class="right-corpus">
+              <p class="message-text">{{message.question}}</p>
+            </div>
+
+          </div>
+          <div class="left-mgs">
+
+            <div class="left-corpus">
+              <p class="message-text">{{message.answer}}</p>
+             
+              <p class="message-text">Bleau: {{message.bleau}}</p>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="input-block">
+      <input v-model="questionText" type="text" class="input-message" placeholder="send message">
+      <button @click="getAnswer" class="select-model">send</button>
+
+    </div>
+
+  </div>
+
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="../src/index.js"></script>
+
+
+</body>
+
+</html>
