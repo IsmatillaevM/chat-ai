@@ -1,12 +1,3 @@
-conda env remove -n ENV_NAME
-
-
-export FLASK_APP=main
-FLASK_ENV=development
-flask run
-
-3.1.0a0
-  
 
 
 
